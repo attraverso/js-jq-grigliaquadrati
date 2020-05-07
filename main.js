@@ -10,7 +10,14 @@ for (var i = 0; i < 25; i++) {
 }
 
 $('.box').each(function() {
-  var innerNr = $(this).append(getRandomNr(0,10));
+  var innerNr = (getRandomNr(0,10));
+  $(this).append(innerNr);
+  console.log(innerNr);
+  if (innerNr % 2) {
+    $(this).addClass('even');
+  } else if (innerNr == 0) {
+    $(this).addClass('zero')
+  }
 });
 
 })/*DNT*/
