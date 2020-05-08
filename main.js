@@ -21,6 +21,8 @@ $('.box').each(function() {
     /*if number is 0, make green*/
   } else if (innerNr == 0) {
     $(this).addClass('zero')
+  } else {
+    $(this).addClass('odd');
   }
 });
 
