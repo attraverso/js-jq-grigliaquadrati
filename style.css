@@ -23,11 +23,11 @@
 }
 
 .even {
-  background-color: red;
+  background-color: black;
 }
 
 .odd {
-  background-color: black;
+  background-color: red;
 }
 
 .zero {

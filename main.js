@@ -16,11 +16,11 @@ $('.box').each(function() {
   /*insert number inside .box*/
   $(this).append(innerNr);
   /*if number is even, make red*/
-  if (innerNr % 2) {
-    $(this).addClass('even');
+  if (innerNr == 0) {
+    $(this).addClass('zero');
     /*if number is 0, make green*/
-  } else if (innerNr == 0) {
-    $(this).addClass('zero')
+  } else if (innerNr % 2 == 0) {
+    $(this).addClass('even')
   } else {
     $(this).addClass('odd');
   }
